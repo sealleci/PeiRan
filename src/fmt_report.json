@@ -1,0 +1,83 @@
+{
+    "测量用的数据格式": {
+        "datum": [{
+            "date": "19xx-01-01",
+            "values": [{
+                "value": 0.0,
+                "time": "00:00:00"
+            }, {}]
+        }, {}]
+    },
+    "仪器发送给气象站的数据格式": {
+        "instrument": "type",
+        "inst_id": 0,
+        "value_name": "name",
+        "unit": "unit",
+        "date": "19xx-01-01",
+        "time": [" 00:00:00", "00:25:00"],
+        "values": []
+    },
+    "气象站发送给中心站的数据格式": {
+        "station_name": "name",
+        "station_id": 0,
+        "zone_id": 0,
+        "date": "19xx-01-01",
+        "time": "00:00:00",
+        "humidity": {
+            "unit": "unit",
+            "value": 0.0
+        },
+        "pressure": {
+            "unit": "unit",
+            "value": 0.0
+        },
+        "temperature": {
+            "unit": "unit",
+            "value": 0.0
+        },
+        "direction": {
+            "unit": "unit",
+            "value": 0.0
+        },
+        "velocity": {
+            "unit": "unit",
+            "value": 0.0
+        },
+        "pm2.5": {
+            "unit": "unit",
+            "value": 0.0
+        }
+    },
+    "用户的请求格式": {
+        "user_id": 0,
+        "zone_id": 0,
+        "date": "19xx-01-01",
+        "time": "00:00:00"
+    },
+    "中心站点返回给用户应用的数据格式": {
+        "recieved": 1,
+        "zone_id": 0,
+        "future_days": [{
+            "date": "19xx-01-01",
+            "weather_types": ["day", "night"],
+            "temps": ["day", "night"],
+            "temp_unit": "unit",
+            "wind_dirs": ["day", "night"],
+            "wind_frcs": ["day", "night"],
+            "air_idx": 0,
+            "wear_idx": 0
+        }, {}],
+        "future_hours": [{
+            "date": "19xx-01-01",
+            "time": "00:00:00",
+            "weather_type": 0,
+            "temp": 0.0,
+            "temp_unit": "unit",
+            "wind_dir": "西北",
+            "wind_frc": "1～2"
+        }, {}]
+    },
+    "收到时返回的": {
+        "recieved": 1
+    }
+}

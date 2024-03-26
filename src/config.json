@@ -1,0 +1,14 @@
+{
+    "inst_send_thre": 6,
+    "inst_max_days": 1,
+    "inst_max_times": 48,
+    "meteor_host": "127.0.0.1",
+    "meteor_port": 1919,
+    "meteor_station_name": "qhd-city",
+    "meteor_station_id": 1,
+    "meteor_zone_id": 101091101,
+    "center_host": "127.0.0.1",
+    "center_port": 810,
+    "global_host": "127.0.0.1",
+    "global_port": 514
+}
